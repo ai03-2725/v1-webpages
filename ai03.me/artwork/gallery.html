@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+	}
+	</style>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#4b4b4b">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+    <!-- Make page mobile-friendly -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Make chrome mobile color dark gray -->
+    <meta name="theme-color" content="#202020">
+
+    <!-- All the Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Other header content -->
+    <title>ai03 - Ryota Goto</title>
+
+    <!-- Custom style sheet -->
+    <style>
+
+    .artgallery {
+      padding-bottom: 30px;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    </style>
+
+  </head>
+
+  <body style="background-color: #FFFFFF; background-size: cover;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" style="max-width: 768px;">
+        <div class="navbar-header">
+          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+          <a class="navbar-brand" href="index.html"><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <p class="navbar-text collapse navbar-collapse" style="">ai03</p>
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../projects/index.html">Projects</a></li>
+            <li><a href="../artwork/index.html">Artwork</a></li>
+            <li><a href="../Ryota-Goto-Resume.pdf">Resume</a></li>
+			<li><a href="https://kb.ai03.me/">Keyboards</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body content -->
+    <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+
+      <!-- Title -->
+      <div class="container text-center" style="margin-top: 15px; width: 90%; max-width: 1024px; margin: auto;">
+        <h1>Artwork</h1>
+        <p><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />These works are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.</p>
+        <p>Do not use these images in any way which violates this license, and do not use these images without proper attribution to Ryota Goto and a link to my website.</p>
+      </div>
+	  
+	  <div class="container-fluid row text-center" style="padding-top: 15px; width: 90%; max-width: 1024px; margin: auto;">
+
+		  <img id="imageHolder" style="width:100%;" src="aaa" alt="No image loading? Please select an image from the gallery."/>
+		  
+		  <a href="index.html" style="margin: 15px;" class="btn btn-lg btn-primary">Back to Gallery</a>
+		  
+	  </div>
+
+    </div>
+  </body>
+  <script>
+	window.onhashchange = function() {
+		if (location.hash) {
+			var url = location.hash.substr(1);
+			url = '../img/artwork/original/' + url + '.png'
+			document.getElementById('imageHolder').src = url;
+		}
+	};
+	window.onhashchange(); // call the event on load
+	
+	window.onload = function() {
+	
+		window.onhashchange(); 
+	
+	};
+  </script>
+  
+</html>

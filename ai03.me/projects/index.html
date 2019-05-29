@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+	}
+	</style>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/site.webmanifest">
+	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#4b4b4b">
+	<link rel="shortcut icon" href="/favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+  
+    <!-- Make page mobile-friendly -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Make chrome mobile color dark gray -->
+    <meta name="theme-color" content="#202020">
+
+    <!-- All the Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Other header content -->
+    <title>ai03</title>
+
+  </head>
+
+  <body style="background-color: #FFFFFF; background-size: cover; margin-bottom:15px">
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" style="max-width: 768px;">
+        <div class="navbar-header">
+          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+          <a class="navbar-brand" href="index.html"><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <p class="navbar-text collapse navbar-collapse" style="">ai03</p>
+          <ul class="nav navbar-nav">
+            <li><a href="../index.html">Home</a></li>
+            <li class="active"><a href="#">Projects</a></li>
+            <li><a href="../artwork/index.html">Artwork</a></li>
+			<li><a href="https://kb.ai03.me/">Keyboards</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body content -->
+    <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+
+		<!-- Title -->
+		<div class="container text-center" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
+			<h1>Projects</h1>
+			<p>Less-CS-more-keyboard stuff is located on the <a href="https://kb.ai03.me/">keyboard page</a>.</p>
+			<p>Miscellaneous projects are also on <a href="https://github.com/ai03-2725">GitHub</a>.</p>
+			
+		</div>
+	
+		<div class="row text-center" style="width: 90%; max-width: 1024px; margin: auto; margin-top: 15px">
+		
+			<hr/>
+			
+			<div class="row">
+				<div class="col-sm-4">
+					<img style="width:100%; box-shadow:0px 0px 10px #404040;margin:15px;" src="../img/projects/kbplate.jpg"/>
+				</div>
+				<div class="col-sm-8">
+					<h3>ai03 Plate Generator</h3>
+					<p>An automated tool for generating mechanical keyboard plates.</p>
+					<p>Avoids float rounding errors, 50-decimal place precision for extreme accuracy.</p>
+					<br/>
+					<p>This project was created to automate plate cutting in the high-end keyboard designing community, cutting production time down from 2 hours to 5 minutes.</p>
+					<a style="margin: 5px;" href="https://kbplate.ai03.me/" class="btn btn-primary">Visit</a><a style="margin: 5px;" href="https://github.com/ai03-2725/another-keyboard-builder" class="btn btn-success">Source</a> 
+				</div>
+			
+			</div>
+			
+			<hr/>
+			
+			<div class="row">
+				<div class="col-sm-4">
+					<img style="width:100%; box-shadow:0px 0px 10px #404040;margin:15px;" src="../img/projects/hybrid.png"/>
+				</div>
+				<div class="col-sm-8">
+					<h3>MX-Alps-Hybrid.pretty</h3>
+					<p>A KiCad library of mechanical keyboard footprints.</p>
+					<p>Various footprints for various occasions, based on official datasheets.</p>
+					<p>Top-side soldermask covers the pads for improved aesthetics.</p>
+					<a style="margin: 5px;" href="https://github.com/ai03-2725/MX_Alps_Hybrid.pretty" class="btn btn-primary">Source</a> 
+				</div>
+			
+			</div>
+			
+			<hr/>
+			
+			<div class="row">
+				<div class="col-sm-4">
+					<img style="width:100%; box-shadow:0px 0px 10px #404040;margin:15px;" src="../img/projects/type-c.jpg"/>
+				</div>
+				<div class="col-sm-8">
+					<h3>Type-C.pretty</h3>
+					<p>USB Type-C connector KiCad library.</p>
+					<p>Includes some connectors suited for DIYers, being capable of being handsoldered.</p>
+					<a style="margin: 5px;" href="https://github.com/ai03-2725/Type-C.pretty" class="btn btn-primary">Source</a> 
+				</div>
+			
+			</div>
+			
+			<hr/>
+			
+		</div>
+	
+    </div>
+  <body>
+</html>

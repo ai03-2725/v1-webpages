@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+	}
+	
+	div.responsive-image-container {
+		width: 100%; 
+		display: flex;
+		padding-bottom: 80%; 
+		position: relative; 
+		background-color: #000000; 
+		margin-bottom: 30px;
+	}
+	
+	.image-text{
+		display: inline-block;
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		text-align:
+	}
+	.item-fade{
+		vertical-align: top;
+		transition: opacity 0.5s;
+		-webkit-transition: opacity 0.5s;
+		opacity: 0;
+	}
+	.item-fade:hover{
+		opacity: 1;
+	}
+	
+	.
+	</style>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#4b4b4b">
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta name="description" content="Design by ai03">
+	<meta name="keywords" content="kbdpad,mkii,mii,ai03,ai03#2725,ai03-2725,keyboards,mechanical keyboards,open source keyboard,open source">
+	<meta name="author" content="ai03">
+  
+    <!-- Make page mobile-friendly -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Make chrome mobile color dark gray -->
+    <meta name="theme-color" content="#202020">
+
+    <!-- All the Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Other header content -->
+    <title>ai03 Keyboards - KBDPAD MKII</title>
+
+  </head>
+
+  <body style="background-size: cover;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" style="max-width: 768px;">
+        <div class="navbar-header">
+          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+          <a class="navbar-brand" href="#"><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <p class="navbar-text collapse navbar-collapse" style="">ai03 Keyboards</p>
+          <ul class="nav navbar-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="index.html">All</a></li>
+					<li><a href="index.html#keyboards">Keyboards</a></li>
+					<li><a href="index.html#pcbs">PCBs</a></li>
+					<li><a href="index.html#kicad">KiCad</a></li>
+					<li><a href="../tools/index.html">Tools</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://wiki.ai03.me">Wiki</a></li>
+					<li><a href="https://kbplate.ai03.me">Plate Generator</a></li>
+				</ul>
+			</li>
+            <li><a href="https://discord.gg/qA5JD9y">Discord</a></li>
+			<li><a href="https://www.ai03.me">Back to ai03.me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body content -->
+    <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+		
+		<div class="row text-center" style="width: 90%; max-width: 1024px; margin: auto; margin-top: 15px">
+		
+			<img src="../img/projects/pad-01.jpg" style="width:100%;"/>
+			
+			<h1 style="margin-top: 30px;">KBDPAD MKII</h1>
+			<p>In collaboration with ai03, the KBDPAD has been redesigned inside and out. </p>
+			<p>Enjoy a high-quality, versatile numpad for affordable prices. </p>
+			<a class="btn btn-large btn-primary" href="https://kbdfans.cn/collections/kbd8x-mkii/products/gb-kbdpad-mkii-mechanical-keyboard-kit">Product Page</a>
+			<a class="btn btn-large btn-primary" href="https://kbdfans.cn/blogs/interest-checks/ic-kbdpad-mkii">Original Announcement</a>
+			<a class="btn btn-large btn-success" href="https://dl.ai03.me/">Plate DXF</a>
+
+			<img src="../img/projects/pad-02.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Sleek and seamless</h3>
+			<p>Thin bezels have been carefully outfitted with a seamless aesthetic for a modern, minimal look.</p>
+			<p>A brass plate adds the premium touch.</p>
+
+			<img src="../img/projects/pad-03.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">For all occasions</h3>
+			<p>At 370g, the case is light enough to be carried around, while being solid on the desk.</p>
+			<p>The top-mounted brass plate offers comfort over extended periods of use.</p>
+
+			<img src="../img/projects/pad-04.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">PCB done right</h3>
+			<p>The PCB offers built-in overcurrent and ESD protection, making it durable against mishaps.</p>
+			<p>The Numlock key's LED can be switched between indicator and backlight mode with a toggle switch.</p>
+
+			<img src="../img/projects/pad-05.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">The perfect match</h3>
+			<p>The KBD8X MKII tenkeyless keyboard is designed with the same profile as the KBDPAD MKII, allowing for a matching aesthetic on the desk.</p>
+			<p>The case halves' colors can be chosen individually to suit your preferences.</p>
+
+			<img src="../img/projects/pad-06.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Current specs</h3>
+			<p>Case weight: 370g<br/>
+			Dimensions: 87 x 134 x 32mm<br/>
+			Material: Aluminum case, brass weight, brass plate<br/>
+			PCB features: <br/>
+			  - In-switch backlighting<br/>
+			  - Num lock indicator/backlight switch<br/>
+			  - All-1U switch compatibility<br/>
+			  - RGB underglow<br/>
+			  - USB Type C<br/>
+			  - ESD and overcurrent protection<br/>
+			</p>
+
+			<h3 style="margin-top: 30px;">Options to choose</h3>
+			
+			<p>Case colors (selectable for each case half):<br/>
+			  - Black<br/>
+			  - Silver<br/>
+			  - Grey<br/>
+			  - E-White (Matte white)<br/>
+			  - Purple<br/>
+			  - Pink<br/>
+			  - Burgundy red<br/>
+			  - Blue grey<br/>
+			  - Green<br/>
+			  - Polycarbonate/Translucent<br/>
+			<br/>
+			Layouts:</p>
+			<div class="col-sm-12">
+				<img src="../img/projects/pad-07.jpg" style="width:50%; margin-top:10px; margin-bottom: 30px;"/>
+			</div>
+			
+		
+			<br/>
+			<br/>
+			<br/>
+			
+		</div>
+
+	</div>
+	
+  <body>
+  
+</html>

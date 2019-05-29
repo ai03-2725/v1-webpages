@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+	}
+	
+	div.responsive-image-container {
+		width: 100%; 
+		display: flex;
+		padding-bottom: 80%; 
+		position: relative; 
+		background-color: #000000; 
+		margin-bottom: 30px;
+	}
+	
+	.image-text{
+		display: inline-block;
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		text-align:
+	}
+	.item-fade{
+		vertical-align: top;
+		transition: opacity 0.5s;
+		-webkit-transition: opacity 0.5s;
+		opacity: 0;
+	}
+	.item-fade:hover{
+		opacity: 1;
+	}
+	
+	.
+	</style>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#4b4b4b">
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:300" rel="stylesheet">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta name="description" content="Design by ai03">
+	<meta name="keywords" content="polaris,gasket,ai03,ai03#2725,ai03-2725,keyboards,mechanical">
+	<meta name="author" content="ai03">
+  
+    <!-- Make page mobile-friendly -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Make chrome mobile color dark gray -->
+    <meta name="theme-color" content="#202020">
+
+    <!-- All the Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Other header content -->
+    <title>ai03 Keyboards - Polaris</title>
+
+  </head>
+
+  <body style="background-size: cover;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" style="max-width: 768px;">
+        <div class="navbar-header">
+          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+          <a class="navbar-brand" href="#"><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <p class="navbar-text collapse navbar-collapse" style="">ai03 Keyboards</p>
+          <ul class="nav navbar-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="index.html">All</a></li>
+					<li><a href="index.html#keyboards">Keyboards</a></li>
+					<li><a href="index.html#pcbs">PCBs</a></li>
+					<li><a href="index.html#kicad">KiCad</a></li>
+					<li><a href="../tools/index.html">Tools</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://wiki.ai03.me">Wiki</a></li>
+					<li><a href="https://kbplate.ai03.me">Plate Generator</a></li>
+				</ul>
+			</li>
+            <li><a href="https://discord.gg/qA5JD9y">Discord</a></li>
+			<li><a href="https://www.ai03.me">Back to ai03.me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body content -->
+    <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+		
+		<div class="text-center" style="width: 90%; max-width: 1024px; margin: auto; margin-top: 0px">
+		
+			<img src="../img/projects/polaris-cover.jpg" style="width:100%;"/>
+			
+			<h1 style="margin-top: 30px; font-family: 'M PLUS Rounded 1c', sans-serif; font-size: 500%">Polaris</h1>
+			<p>by ai03 and Kevinplus</p>
+			<h3>Gaskets. Seamless. 60%. $265 shipped.</h3>
+			<p>Offering a quality typing experience without the high price tag, Polaris redefines the expectations from custom keyboards.</p>
+			<p>With proper gasket plate mounting, flex-slotted 1.2mm thin PCB, sleek seamless aesthetic, and accessible pricing, experience a top-tier 60% keyboard for a mid-range price.</p>
+			<a class="btn btn-large btn-primary" href="https://geekhack.org/index.php?topic=100383.0">Geekhack Thread</a>
+			<a class="btn btn-large btn-primary" disabled>KBDfans Product Page</a>
+			<a class="btn btn-large btn-primary" disabled>Assembly Instructions</a>
+			<a class="btn btn-large btn-success" disabled>Plate DXF</a>
+
+			<img src="../img/projects/polaris-rear-dual.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Gasket Comfort</h3>
+			<p>Cutting no corners, a total of 18 gaskets hold the plate in place for maximum typing comfort, improved acoustics, and easy assembly.</p>
+			<p>Careful engineering from 8 full redesigns and multiple prototypes are tucked away within the slim bezels.</p>
+
+			<img src="../img/projects/polaris-bottom.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Refined Aesthetic</h3>
+			<p>The seamless chassis borrows the clean look praised in the KBD8X MKII, while adding a rear-angled weight which adds a touch of visible elegance.</p>
+			<p>Thin bezels are combined with sharp chamfers for a striking modern look.</p>
+
+			<img src="../img/projects/polaris-pcb.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Taking Things Further</h3>
+			<p>The 1.2mm thick, slot-cut super flexible PCB offers typing comfort that extends the gasket mount benefits.</p>
+			<p>Rubber pads applied to the PCB make sure that the stabilizers fit into place without issues. </p>
+
+			<img src="../img/projects/polaris-variants.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Made for You</h3>
+			<p>The plate is offered in brass and polycarbonate, WKL and universal layouts, and half- and full-plate options to meet the exact aesthetic and comfort you desire.</p>
+			<p>Choose between regular, WKL, and HHKB style tops to suit your needs.</p>
+
+			<img src="../img/projects/polaris-breakout.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Cutting No Corners</h3>
+			<p>Two foam mid-layers, one below the plate and one below the PCB, fill the case to cancel vibrations and echoing.</p>
+			<p>The plate is completely isolated by gaskets, leaving no metal-to-metal contact between the plate and chassis once assembled.</p>
+
+			<img src="../img/projects/polaris-spec-header.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<div class="row">
+			<div class="col-sm-6" style="min-width=500px; width=25%">
+				<h3 style="margin-top: 30px; text-align: left;">Specifications</h3>
+				<p style="text-align: left;"><strong>Case weight:</strong> ~1.3kg<br/>
+				<strong>Dimensions:</strong> 296 x 110 x 28mm<br/>
+				<strong>Price:</strong> 265 USD, free shipping included<br/>
+				<br/><strong>Case colors:</strong><br/>
+				- E-White<br/>
+				- Black<br/>
+				- Space gray<br/>
+				- Blue grey<br/>
+				- Burgundy red<br/>
+				- Olive green<br/>
+				- Rose gold<br/>
+				- Purple<br/>
+				- Polycarbonate (Extra cost)<br/>
+				<br/><strong>Case tops:</strong><br/>
+				<img src="../img/projects/polaris-tops.jpg" style="width:50%; min-width: 200px; margin-top:10px; margin-bottom: 30px;"/><br/>
+				<strong>Plate options:</strong><br/>
+				- Layouts: WKL, Universal<br/>
+				- Style: Full, Half<br/>
+				- Material: Brass, Polycarbonate<br/>
+				<br/><strong>Layouts supported:</strong><br/>
+				- <strong>Universal</strong> Plate:<br/>
+				<img src="../img/projects/polaris-layouts-universal.jpg" style="width:100%; margin-top:10px; margin-bottom: 30px;"/><br/>
+				- <strong>WKL</strong> Plate:<br/>
+				<img src="../img/projects/polaris-layouts-wkl.jpg" style="width:100%; margin-top:10px; margin-bottom: 30px;"/><br/>
+				</p>
+			</div>
+			<div class="col-sm-6" style="min-width=500px; width=25%">
+				<h3 style="margin-top: 30px; text-align: left;">FAQ</h3>
+				<pre style="text-align: left; word-break: break-word; white-space: pre-wrap;">
+Q. Will this fit typical 60% PCBs (GH60, etc)?
+A. No. The case is matched exactly to the custom-shaped 1.2mm thick PCB.
+
+Q. Will you open-source the plate files?
+A. Yes. They will be available on ai03’s website when they are ready.
+
+Q. Exactly how good is gasket mount?
+A. We won’t make exact claims regarding feel and sound, since they are highly subjective. However, we will say that we picked this specific design and combination of materials for good reason after thorough testing.
+
+Q. How does the thin PCB affect stabilizers, which are designed for 1.6mm thick PCBs?
+A. Thin rubber adhesive shims are placed between the PCB and stabilizers, removing the potential compatibility issues.
+
+Q. Is the PCB hot-swap?
+A. No. Hotswap and large numbers of supported layouts don’t play well together.
+
+Q. What USB connector does it use?
+A. USB Type-C.
+
+Q. What plate options should I pick?
+A. Pick WKL if you’re fine with the layouts supported in the WKL plate; otherwise, use the universal plate. Pick brass for a firm, solid bottom-out and metal heft, or polycarbonate for soft bottom-out and typing comfort that extends the benefits of thin PCB and gasket mount. Pick full-plate for increased weight and solid feel that benefits brass, or half-plate for maximized flex that benefits polycarbonate.
+
+
+Q. All this for $265? How is it possible?
+A. It was designed to hit a sub-300 price tag from the beginning, and most of the price tag goes straight to the keyboard. On the flipside, it won’t come in fancy packaging, or have extra accessories beyond the keyboard itself. 
+
+Q. Will there be future rounds?
+A. Unlikely within the near future. I have too many other designs that I want to produce.
+
+Q. Why the name?
+A. Polaris, as per its name, is a pole star. It is used as a base position for measurements in celestial navigation, due to its characteristic of staying in the same position in the sky regardless of time. Similarly, we hope that this keyboard will illuminate the path towards a brighter future, serving as a baseline for what is possible without breaking the bank.</pre>
+			</div>
+		</div>
+		<h3 style="margin-top: 30px;">Gallery</h3>
+		<img src="../img/projects/polaris-variants.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-hhkb-blue.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-grey.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-cover.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-side.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-rear.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-rear-dual.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-bottom.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-pcb.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-breakout.jpg" style="width:100%; margin-top:50px;"/>
+		<img src="../img/projects/polaris-breakout-rear.jpg" style="width:100%; margin-top:50px;"/>
+		<br/>
+		<br/>
+		<br/>
+			
+		</div>
+
+	</div>
+	
+  <body>
+  
+</html>
