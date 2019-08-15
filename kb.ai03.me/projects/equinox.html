@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  
+	<style>
+	::-webkit-scrollbar { 
+    display: none; 
+	}
+	
+	div.responsive-image-container {
+		width: 100%; 
+		display: flex;
+		padding-bottom: 80%; 
+		position: relative; 
+		background-color: #000000; 
+		margin-bottom: 30px;
+	}
+	
+	.image-text{
+		display: inline-block;
+		background: rgba(0, 0, 0, 0.5);
+		position: absolute;
+
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		text-align:
+	}
+	.item-fade{
+		vertical-align: top;
+		transition: opacity 0.5s;
+		-webkit-transition: opacity 0.5s;
+		opacity: 0;
+	}
+	.item-fade:hover{
+		opacity: 1;
+	}
+	
+	@font-face {
+		font-family: 'lemonmilk';
+		src: url('../fonts/lemonmilk-webfont.woff2') format('woff2'),
+			 url('../fonts/lemonmilk-webfont.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+	}
+	</style>
+	
+	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="../favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="../favicon/favicon-16x16.png">
+	<link rel="manifest" href="../favicon/site.webmanifest">
+	<link rel="mask-icon" href="../favicon/safari-pinned-tab.svg" color="#4b4b4b">
+	<link rel="shortcut icon" href="../favicon/favicon.ico">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-config" content="../favicon/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	
+	<meta name="description" content="Design by ai03">
+	<meta name="keywords" content="equinox,ion,ion keyboards,ai03,ai03#2725,ai03-2725,keyboards,mechanical keyboards,open source keyboard,open source">
+	<meta name="author" content="ai03">
+  
+    <!-- Make page mobile-friendly -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Make chrome mobile color dark gray -->
+    <meta name="theme-color" content="#202020">
+
+    <!-- All the Bootstrap stuff -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- Other header content -->
+    <title>ai03 Keyboards - Equinox</title>
+
+  </head>
+
+  <body style="background-size: cover;">
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid" style="max-width: 768px;">
+        <div class="navbar-header">
+          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
+          <a class="navbar-brand" href="#"><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <p class="navbar-text collapse navbar-collapse" style="">ai03 Keyboards</p>
+          <ul class="nav navbar-nav">
+			<li><a href="../index.html">Home</a></li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="index.html">All</a></li>
+					<li><a href="index.html#keyboards">Keyboards</a></li>
+					<li><a href="index.html#pcbs">PCBs</a></li>
+					<li><a href="index.html#kicad">KiCad</a></li>
+					<li><a href="../tools/index.html">Tools</a></li>
+				</ul>
+			</li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
+				<span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://wiki.ai03.me">Wiki</a></li>
+					<li><a href="https://kbplate.ai03.me">Plate Generator</a></li>
+				</ul>
+			</li>
+            <li><a href="https://discord.gg/qA5JD9y">Discord</a></li>
+			<li><a href="https://www.ai03.me">Back to ai03.me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Body content -->
+    <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
+    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+		
+		<div class="row text-center" style="width: 90%; max-width: 1024px; margin: auto; margin-top: 0px">
+		
+			<img src="../img/projects/Equinox-Cover.jpg" style="width:100%;"/>
+			
+			<h1 style="margin-top: 30px; font-family: 'lemonmilk'; font-size: 500%"">EQUINOX</h1>
+			<p>The tiny board that could.</p>
+			<p>High-end features and an elegant design crammed into a board that can fit in a coat pocket.</p>
+			
+			<img src="../img/projects/Equinox-01.jpg" style="width:100%; margin-top:25px; margin-bottom:25px;"/>
+			
+			<a class="btn btn-large btn-primary" href="https://geekhack.org/index.php?topic=101303.0">GeekHack IC Thread</a>
+			<a class="btn btn-large btn-primary" href="https://ionkeyboards.com/">Ion Keyboards</a>
+			<a class="btn btn-large btn-success" disabled>Product Page</a>
+
+			<img src="../img/projects/Equinox-02.jpg" style="width:100%; margin-top:25px;"/>
+			
+			<h3 style="margin-top: 30px;">Beyond the Typical</h3>
+			<p>Equinox skips the plate to offer maximum flex.</p>
+			<p>The PCB is secured by its tabs from below by rubber gaskets directly to the case, earning the name of tabbed "gasket" PCB mount.</p>
+
+			<img src="../img/projects/Equinox-03.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Compact and Classy</h3>
+			<p>The winkeyless blockers have been implemented for a classic aesthetic, regardless of the board’s small footprint.</p>
+			<p>An internal weight adds sufficient mass for use at a desk, while the all-aluminum exterior provides durability on the go.</p>
+			
+			<img src="../img/projects/Equinox-04.jpg" style="width:100%; margin-top:50px;"/>
+			
+			<h3 style="margin-top: 30px;">Current specs</h3>
+			<pre style="text-align: left; word-break: break-word; white-space: pre-wrap;">
+- 6° typing angle
+- Case material TBD
+- 17.25mm front height
+- QMK PCB designed by ai03 with VIA support
+- Backlight & Underglow LED support 
+- Optional CF plate will be available during GB; plate file to be open-sourced
+- Brass internal "weight" (Sandblasted & Coated)
+- Weight: 740g fully assembled
+- Case colors: TBD
+- Cost: TBD
+- GB Date: TBD
+- Vendor: Cannonkeys</pre>
+
+			<h3 style="margin-top: 30px;">Layout Compatibility</h3>
+
+			<img src="../img/projects/Equinox-Layouts.jpg" style="width:100%; margin-top:10px; margin-bottom: 30px;"/>
+			
+			<img src="../img/projects/Equinox-05.jpg" style="width:100%; margin-top:25px; margin-bottom:25px;"/>
+			<img src="../img/projects/Equinox-06.jpg" style="width:100%; margin-top:25px; margin-bottom:25px;"/>
+
+			
+			<br/>
+			<br/>
+			<br/>
+			
+		</div>
+
+	</div>
+	
+  <body>
+  
+</html>
