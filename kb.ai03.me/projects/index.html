@@ -37,7 +37,9 @@
 		opacity: 1;
 	}
 	
-	.
+	.nav-item {
+		margin-right:12px;
+	}
 	</style>
 	
 	<link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-touch-icon.png">
@@ -61,77 +63,82 @@
     <!-- Make chrome mobile color dark gray -->
     <meta name="theme-color" content="#202020">
 
-    <!-- All the Bootstrap stuff -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap, jquery, CSS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <!-- Other header content -->
     <title>ai03 Keyboards - Projects</title>
 
   </head>
 
-  <body style="background-size: cover;">
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid" style="max-width: 768px;">
-        <div class="navbar-header">
-          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
-          <a class="navbar-brand" disabled><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
-        </div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:rgba(0,0,0, 0.7);">
+	<div class="container-fluid" style="max-width: 992px;">
+		<a class="navbar-brand d-lg-none d-xl-none" href="https://kb.ai03.me/">
+			<img src="https://kb.ai03.me/img/navbar/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-right:8px;">
+			
+		</a>
+		<button class="navbar-toggler" type="button" style="border-color: transparent;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<img src="https://kb.ai03.me/img/navbar/dropdown.png" height="30px"/>
+		</button>
 
-        <div class="collapse navbar-collapse" id="navbar">
-          <p class="navbar-text collapse navbar-collapse" style="">ai03 Keyboards</p>
-          <ul class="nav navbar-nav">
-			<li><a href="../index.html">Home</a></li>
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" disabled>Projects
-				<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a disabled>All</a></li>
-					<li><a href="#keyboards">Keyboards</a></li>
-					<li><a href="#pcbs">PCBs</a></li>
-					<li><a href="#kicad">KiCad</a></li>
-					<li><a href="../tools/index.html">Tools</a></li>
-				</ul>
-			</li>
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" disabled>Tools
-				<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="https://wiki.ai03.me">Wiki</a></li>
-					<li><a href="https://kbplate.ai03.me">Plate Generator</a></li>
-				</ul>
-			</li>
-            <li><a href="https://discord.gg/qA5JD9y">Discord</a></li>
-			<li><a href="https://www.ai03.me">Back to ai03.me</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="https://kb.ai03.me/projects/index.html">Projects</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Designing
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="https://wiki.ai03.me/">Wiki</a>
+					<a class="dropdown-item" href="https://kbplate.ai03.me">Plate Generator</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="https://kb.ai03.me/tools/index.html">View all tools</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav mx-auto">
+				<a class="navbar-brand d-none d-lg-block d-xl-block" href="https://kb.ai03.me/">
+					<img src="https://kb.ai03.me/img/navbar/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-left:42px;">
+				</a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Discord</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Back to main site</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</nav>
 
     <!-- Body content -->
     <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
-    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
-		
+	<div class="row text-center" style="padding-top: 72px;  width: 90%; margin: auto">
+	
 		<!-- Title -->
-		<div class="container text-center" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
-			<h1>Projects</h1>
-			<p>A mix of open-source and closed-source projects.</p>
-			<br/>
-			<p>Please join the <a href="https://discord.gg/qA5JD9y">Discord server</a> to receive info regarding product updates and new releases.</p>
+		<div class="col-md-12">
+			<h1 style="font-size: 52px">Projects Gallery</h1>
 		</div>
 		
-		<div class="row text-center" style="width: 90%; max-width: 1024px; margin: auto; margin-top: 15px">
+		<div class="col-md-12" style="margin: auto; margin-top: 15px">
 		
-			<div class="container text-center" id="keyboards" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
-				<h3>Keyboards and Accessories</h3>
+			<div class="container text-center" id="keyboards" style="padding-top: 30px; width: 90%; max-width: 768px; margin: auto;">
+				<h3>Reference Series</h3>
+				<p>A balance of aesthetics and affordability.</p>
 			</div>
 			
 			<hr/>
 			
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="polaris.html">
 						<div class="responsive-image-container" style="background: url(../img/projects/polaris-thumbnail.jpg) 50% 50% no-repeat; background-color: #B2B2B2; background-size: auto 140%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -143,43 +150,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
-					<a href="equinox.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/Equinox-03.jpg) 38% 50% no-repeat; background-color: #B6B6B6; background-size: auto 80%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Equinox</h2>
-								<p style="color: #FFFFFF;" >Compact high-end board</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="lunar.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/DSC04383.jpg) 50% 50% no-repeat; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Lunar</h2>
-								<p style="color: #FFFFFF;" >65% AEK keyboard</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="kbd67-mkii.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/kbd67mk2-cover.jpg) 25% 00% no-repeat; background-color: #FFFFFF; background-size: auto 135%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >KBD67 MKII</h2>
-								<p style="color: #FFFFFF;" >A keyboard for everyone</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="kbd8x-mkii.html">
 						<div class="responsive-image-container" style="background: url(../img/projects/kbd8x-mkii.jpg) 50% 50% no-repeat; background-color: #E2F6F6; background-size: auto 80%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -191,55 +162,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
-					<a href="simple-ja.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/simpleja-polaris-2.jpg) 0% 100% no-repeat; background-color: #FFFFFF; background-size: auto 215%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >SimpleJA Keyset</h2>
-								<p style="color: #FFFFFF;" >A simple retro Japanese keyset</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="prism-opener.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/prism-opener-1.jpg) 50% 50% no-repeat; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Prism Switch Opener</h2>
-								<p style="color: #FFFFFF;" >An elegant tool</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="contra.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/contra-cartel.jpg) 50% 50% no-repeat; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Contra</h2>
-								<p style="color: #FFFFFF;" >Low-cost ortholinear keyboard</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="switch-opener.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/switch-opener-2.jpg) 50% 50% no-repeat; background-size: auto 110%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Keychain Switch Opener</h2>
-								<p style="color: #FFFFFF;" >Portable switch modding</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="kbdpad-mkii.html">
 						<div class="responsive-image-container" style="background: url(../img/projects/kbdpad-mkii.jpg) 50% 50% no-repeat; background-color: #EED8D8; background-size: auto 80%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -251,19 +174,43 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
-					<a href="ut47.2.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/ut47.2.jpg) 50% 50% no-repeat; background-color: #555555; background-size: auto 100%;">
+			</div>
+			
+				
+			<div class="container text-center" id="keyboards" style="padding-top: 30px; width: 90%; max-width: 768px; margin: auto;">
+				<h3>Signature Series</h3>
+				<p>Tuned for beauty and the enjoyment of typing.</p>
+			</div>
+			
+			<hr/>
+			
+			<div class="row">
+				
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="lunar.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/DSC04383.jpg) 50% 50% no-repeat; background-size: auto 100%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
 								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >UT47.2</h2>
-								<p style="color: #FFFFFF;" >Hot-swappable, low-cost 40%</p>
+								<h2 style="color: #FFFFFF;" >Lunar</h2>
+								<p style="color: #FFFFFF;" >65% AEK keyboard</p>
 								</div>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="simple-ja.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/simpleja-polaris-2.jpg) 0% 100% no-repeat; background-color: #FFFFFF; background-size: auto 215%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >SimpleJA Keyset</h2>
+								<p style="color: #FFFFFF;" >A simple retro Japanese keyset</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="orbit.html">
 						<div class="responsive-image-container" style="background: url(../img/projects/Orbit.jpg) 50% 50% no-repeat; background-color: #B2B2B2; background-size: auto 90%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -275,7 +222,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="arc.html">
 						<div class="responsive-image-container" style="background: url(../img/projects/arc.jpg) 50% 70% no-repeat; background-size: auto 150%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -287,7 +234,66 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
+								
+			</div>
+			
+			<div class="container text-center" id="keyboards" style="padding-top: 25px; width: 90%; max-width: 768px; margin: auto;">
+				<h3>Collaborations</h3>
+				<p>Designs tailored to various brands.</p>
+			</div>
+			
+			<hr/>
+			
+			<div class="row">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="equinox.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/Equinox-03.jpg) 38% 50% no-repeat; background-color: #B6B6B6; background-size: auto 80%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Equinox</h2>
+								<p style="color: #FFFFFF;" >Compact high-end board</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="kbd67-mkii.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/kbd67mk2-cover.jpg) 25% 00% no-repeat; background-color: #FFFFFF; background-size: auto 135%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >KBD67 MKII</h2>
+								<p style="color: #FFFFFF;" >A keyboard for everyone</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="ut47.2.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/ut47.2.jpg) 50% 50% no-repeat; background-color: #555555; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >UT47.2</h2>
+								<p style="color: #FFFFFF;" >Hot-swappable, low-cost 40%</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="contra.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/contra-cartel.jpg) 50% 50% no-repeat; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Contra</h2>
+								<p style="color: #FFFFFF;" >Low-cost ortholinear keyboard</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="breadstick.html">
 						<div class="responsive-image-container" style="background: url(../img/projects/breadstick.jpg) 50% 50% no-repeat; background-size: auto 100%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -299,267 +305,52 @@
 						</div>
 					</a>
 				</div>
-				
 			</div>
-			<div class="container text-center" id="pcbs" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
-				<h3>PCBs</h3>
+			
+			<div class="container text-center" id="pcbs" style="padding-top: 25px; width: 90%; max-width: 768px; margin: auto;">
+				<h3>Accessories</h3>
+				<p>For tuning keyboards to perfection.</p>
 			</div>
 			
 			<hr/>
 			
 			<div class="row">
-			
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager104">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager104.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="prism-opener.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/prism-opener-1.jpg) 50% 50% no-repeat; background-size: auto 100%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
 								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager104</h2>
-								<p style="color: #FFFFFF;" >A proper full-size PCB</p>
+								<h2 style="color: #FFFFFF;" >Prism Switch Opener</h2>
+								<p style="color: #FFFFFF;" >An elegant tool</p>
 								</div>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager97">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager97.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="switch-opener.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/switch-opener-2.jpg) 50% 50% no-repeat; background-size: auto 110%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
 								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager97</h2>
-								<p style="color: #FFFFFF;" >A compact layout offering full-size functionality</p>
+								<h2 style="color: #FFFFFF;" >Keychain Switch Opener</h2>
+								<p style="color: #FFFFFF;" >Portable switch modding</p>
 								</div>
 							</div>
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager60">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager60.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 80%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager60</h2>
-								<p style="color: #FFFFFF;" >A 60% PCB with typical tray mount points</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager60/tree/alps">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager60-Alps.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager60-Alps</h2>
-								<p style="color: #FFFFFF;" >A 60% PCB tailored for Alps SKCM/L</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager50">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager50.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 75%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager50</h2>
-								<p style="color: #FFFFFF;" >A balance between function and size</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager40">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager40.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 75%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager40</h2>
-								<p style="color: #FFFFFF;" >A fully featured 40% PCB</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager20/tree/3700">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager20-3700.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager20-3700</h2>
-								<p style="color: #FFFFFF;" >A Cherry G80-3700 replacement PCB</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager20/tree/FnRow">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager20-Fn.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager20-FnRow</h2>
-								<p style="color: #FFFFFF;" >A numpad PCB with FN row</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager20">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager20.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager20</h2>
-								<p style="color: #FFFFFF;" >A numpad PCB</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Voyager4">
-						<div class="responsive-image-container" style="background: url(../img/projects/Voyager4.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Voyager4</h2>
-								<p style="color: #FFFFFF;" >Absolutely tiny, densely packed, loses no features</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Soyuz">
-						<div class="responsive-image-container" style="background: url(../img/projects/Soyuz.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 80%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Soyuz</h2>
-								<p style="color: #FFFFFF;" >Single-PCB Numpad Kit</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Quasar">
-						<div class="responsive-image-container" style="background: url(../img/projects/Quasar.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Quasar</h2>
-								<p style="color: #FFFFFF;" >Replacement controller for the IBM Model M Space Saving Keyboard</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a disabled>
-						<div class="responsive-image-container" style="background: url(../img/projects/spfs.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Southpaw-Fullsize PCB</h2>
-								<p style="color: #FFFFFF;" >For the Southpaw Fullsize by Switchplate Peripherals</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a disabled>
-						<div class="responsive-image-container" style="background: url(../img/projects/firefly.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Firefly PCB</h2>
-								<p style="color: #FFFFFF;" >For the Firefly by QUAD-H</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="https://github.com/ai03-2725/Orbit/tree/master/OrbitX-PCB">
-						<div class="responsive-image-container" style="background: url(../img/projects/orbitx-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Orbit-X PCB</h2>
-								<p style="color: #FFFFFF;" >Palm-sized ergo</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a disabled>
-						<div class="responsive-image-container" style="background: url(../img/projects/kbd67mk2-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >KBD67 MKII Non-Hotswap PCB</h2>
-								<p style="color: #FFFFFF;" >For the KBD67 MKII</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a disabled>
-						<div class="responsive-image-container" style="background: url(../img/projects/iS0-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >iS0 PCB</h2>
-								<p style="color: #FFFFFF;" >For the iS0 by Illuminati Works</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="orbit.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/orbit-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Orbit PCB</h2>
-								<p style="color: #FFFFFF;" >For the Orbit Keyboard</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="ut47.2.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/ut47.2-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >UT47.2 PCB</h2>
-								<p style="color: #FFFFFF;" >For the UT47.2 by Keyhive</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-sm-4">
-					<a href="contra.html">
-						<div class="responsive-image-container" style="background: url(../img/projects/contra-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 80%;">
-							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
-								<div class="container" style="width: 100%;">
-								<h2 style="color: #FFFFFF;" >Contra PCB</h2>
-								<p style="color: #FFFFFF;" >For the Contra by Cartel</p>
-								</div>
-							</div>
-						</div>
-					</a>
-				</div>
-			
 			</div>
+			
 			<div class="container text-center" id="kicad" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
-				<h3>KiCad</h3>
+				<h3>KiCad Libraries</h3>
+				<p>Powering the custom keyboard community from behind the scenes.</p>
 			</div>
 			
 			<hr/>
 			
 			<div class="row">
 			
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="https://github.com/ai03-2725/MX_Alps_Hybrid.pretty">
 						<div class="responsive-image-container" style="background: url(../img/projects/hybrid.jpg) 50% 50% no-repeat; background-color: #000000; background-size: auto 100%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -572,7 +363,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="https://github.com/ai03-2725/Type-C.pretty">
 						<div class="responsive-image-container" style="background: url(../img/projects/type-c.jpg) 50% 50% no-repeat; background-size: auto 100%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -584,7 +375,7 @@
 						</div>
 					</a>
 				</div>
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<a href="https://github.com/ai03-2725/random-keyboard-parts.pretty">
 						<div class="responsive-image-container" style="background: url(../img/projects/random-parts.jpg) 50% 50% no-repeat; background-color: #000000; background-size: auto 120%;">
 							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
@@ -599,6 +390,259 @@
 				</div>
 				
 			</div>
+			
+			<div class="container text-center" id="pcbs" style="padding-top: 25px; width: 90%; max-width: 768px; margin: auto;">
+				<h3>PCBs</h3>
+				<p>Open-source projects link to their respective GitHub repos.</p>
+			</div>
+			
+			<hr/>
+			
+			<div class="row">
+			
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager104">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager104.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager104</h2>
+								<p style="color: #FFFFFF;" >A proper full-size PCB</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager97">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager97.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager97</h2>
+								<p style="color: #FFFFFF;" >A compact layout offering full-size functionality</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager60">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager60.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 80%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager60</h2>
+								<p style="color: #FFFFFF;" >A 60% PCB with typical tray mount points</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager60/tree/alps">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager60-Alps.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager60-Alps</h2>
+								<p style="color: #FFFFFF;" >A 60% PCB tailored for Alps SKCM/L</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager50">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager50.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 75%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager50</h2>
+								<p style="color: #FFFFFF;" >A balance between function and size</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager40">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager40.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 75%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager40</h2>
+								<p style="color: #FFFFFF;" >A fully featured 40% PCB</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager20/tree/3700">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager20-3700.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager20-3700</h2>
+								<p style="color: #FFFFFF;" >A Cherry G80-3700 replacement PCB</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager20/tree/FnRow">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager20-Fn.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager20-FnRow</h2>
+								<p style="color: #FFFFFF;" >A numpad PCB with FN row</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager20">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager20.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager20</h2>
+								<p style="color: #FFFFFF;" >A numpad PCB</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Voyager4">
+						<div class="responsive-image-container" style="background: url(../img/projects/Voyager4.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Voyager4</h2>
+								<p style="color: #FFFFFF;" >Absolutely tiny, densely packed, loses no features</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Soyuz">
+						<div class="responsive-image-container" style="background: url(../img/projects/Soyuz.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 80%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Soyuz</h2>
+								<p style="color: #FFFFFF;" >Single-PCB Numpad Kit</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Quasar">
+						<div class="responsive-image-container" style="background: url(../img/projects/Quasar.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Quasar</h2>
+								<p style="color: #FFFFFF;" >Replacement controller for the IBM Model M Space Saving Keyboard</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a disabled>
+						<div class="responsive-image-container" style="background: url(../img/projects/spfs.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Southpaw-Fullsize PCB</h2>
+								<p style="color: #FFFFFF;" >For the Southpaw Fullsize by Switchplate Peripherals</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a disabled>
+						<div class="responsive-image-container" style="background: url(../img/projects/firefly.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Firefly PCB</h2>
+								<p style="color: #FFFFFF;" >For the Firefly by QUAD-H</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="https://github.com/ai03-2725/Orbit/tree/master/OrbitX-PCB">
+						<div class="responsive-image-container" style="background: url(../img/projects/orbitx-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Orbit-X PCB</h2>
+								<p style="color: #FFFFFF;" >Palm-sized ergo</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a disabled>
+						<div class="responsive-image-container" style="background: url(../img/projects/kbd67mk2-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >KBD67 MKII Non-Hotswap PCB</h2>
+								<p style="color: #FFFFFF;" >For the KBD67 MKII</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a disabled>
+						<div class="responsive-image-container" style="background: url(../img/projects/iS0-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 100%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >iS0 PCB</h2>
+								<p style="color: #FFFFFF;" >For the iS0 by Illuminati Works</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="orbit.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/orbit-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 70%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Orbit PCB</h2>
+								<p style="color: #FFFFFF;" >For the Orbit Keyboard</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="ut47.2.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/ut47.2-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 65%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >UT47.2 PCB</h2>
+								<p style="color: #FFFFFF;" >For the UT47.2 by Keyhive</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+				<div class="col-xl-3 col-lg-4 col-md-6">
+					<a href="contra.html">
+						<div class="responsive-image-container" style="background: url(../img/projects/contra-pcb.jpg) 50% 50% no-repeat; background-color: #606060; background-size: auto 80%;">
+							<div class="image-text item-fade" style="min-width: 100%; min-height: 100%;">
+								<div class="container" style="width: 100%;">
+								<h2 style="color: #FFFFFF;" >Contra PCB</h2>
+								<p style="color: #FFFFFF;" >For the Contra by Cartel</p>
+								</div>
+							</div>
+						</div>
+					</a>
+				</div>
+			
+			</div>
+			
 		
 		</div>
 		
@@ -607,7 +651,7 @@
 			<hr/>
 			
 			<div class="row">
-				<div class="col-sm-4">
+				<div class="col-xl-3 col-lg-4 col-md-6">
 					<img style="width:100%; margin:15px;" src="../img/projects/commission.jpg"/>
 				</div>
 				<div class="col-sm-8">

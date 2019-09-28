@@ -7,6 +7,10 @@
 	::-webkit-scrollbar { 
     display: none; 
 	}
+	
+	.nav-item {
+		margin-right:12px;
+	}
 	</style>
 	
 	<meta name="description" content="Tools to make designing keyboards easier">
@@ -30,10 +34,11 @@
     <!-- Make chrome mobile color dark gray -->
     <meta name="theme-color" content="#202020">
 
-    <!-- All the Bootstrap stuff -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- Bootstrap, jquery, CSS -->
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
 
     <!-- Other header content -->
     <title>ai03 Keyboards - Tools</title>
@@ -42,56 +47,63 @@
 
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container-fluid" style="max-width: 768px;">
-        <div class="navbar-header">
-          <img src="../img/navbar/dropdown.png" type="button" class="navbar-toggle" height="40px" data-toggle="collapse" data-target="#navbar" style="border-color: transparent; margin: 5px;"></img>
-          <a class="navbar-brand" href="#"><img src="../img/navbar/logo.png" style="height: 100%;"/></a>
-        </div>
+	<nav class="navbar fixed-top navbar-expand-lg navbar-dark" style="background-color:rgba(0,0,0, 0.7);">
+	<div class="container-fluid" style="max-width: 992px;">
+		<a class="navbar-brand d-lg-none d-xl-none" href="https://kb.ai03.me/">
+			<img src="https://kb.ai03.me/img/navbar/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-right:8px;">
+			
+		</a>
+		<button class="navbar-toggler" type="button" style="border-color: transparent;" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<img src="https://kb.ai03.me/img/navbar/dropdown.png" height="30px"/>
+		</button>
 
-        <div class="collapse navbar-collapse" id="navbar">
-          <p class="navbar-text collapse navbar-collapse" style="">ai03 Keyboards</p>
-          <ul class="nav navbar-nav">
-			<li><a href="../index.html">Home</a></li>
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Projects
-				<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="../projects/index.html">All</a></li>
-					<li><a href="../projects/index.html#keyboards">Keyboards</a></li>
-					<li><a href="../projects/index.html#pcbs">PCBs</a></li>
-					<li><a href="../projects/index.html#kicad">KiCad</a></li>
-					<li><a href="tools/index.html">Tools</a></li>
-				</ul>
-			</li>
-			<li class="dropdown">
-				<a class="dropdown-toggle" data-toggle="dropdown" href="#">Tools
-				<span class="caret"></span></a>
-				<ul class="dropdown-menu">
-					<li><a href="https://wiki.ai03.me">Wiki</a></li>
-					<li><a href="https://kbplate.ai03.me">Plate Generator</a></li>
-				</ul>
-			</li>
-            <li><a href="https://discord.gg/qA5JD9y">Discord</a></li>
-			<li><a href="https://www.ai03.me">Back to ai03.me</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="https://kb.ai03.me/projects/index.html">Projects</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Designing
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+					<a class="dropdown-item" href="https://wiki.ai03.me/">Wiki</a>
+					<a class="dropdown-item" href="https://kbplate.ai03.me">Plate Generator</a>
+					<div class="dropdown-divider"></div>
+					<a class="dropdown-item" href="https://kb.ai03.me/tools/index.html">View all tools</a>
+					</div>
+				</li>
+			</ul>
+			<ul class="navbar-nav mx-auto">
+				<a class="navbar-brand d-none d-lg-block d-xl-block" href="https://kb.ai03.me/">
+					<img src="https://kb.ai03.me/img/navbar/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" style="margin-left:42px;">
+				</a>
+			</ul>
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="#">Discord</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Back to main site</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	</nav>
 
     <!-- Body content -->
     <!-- The complex styling is to make the container fill vertical space accounting for navbar/padding for navbar -->
-    <div class="container-fluid" style="margin-top: 50px; min-height: -webkit-calc(100vh - 50px); min-height: -moz-calc(100vh - 50px); min-height: calc(100vh - 50px);">
+    <div>
 		
 		<!-- Title -->
-		<div class="container text-center" style="margin-top: 15px; width: 90%; max-width: 768px; margin: auto;">
-			<h1>Tools</h1>
+		<div class="container text-center" style="padding-top: 72px; width: 90%; max-width: 992px; margin: auto;">
+			<h1 style="font-size: 52px">Tools</h1>
 			<p>To make your life easier.</p>
 			
 			
 		</div>
 
-		<div class="row text-center" style="width: 90%; max-width: 1024px; margin: auto; margin-top: 15px">
+		<div class="text-center" style="width: 90%; max-width: 992px; margin: auto; margin-top: 15px">
 		
 			<hr/>
 			
