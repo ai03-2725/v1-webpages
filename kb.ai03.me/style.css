@@ -3,39 +3,26 @@ display: none;
 }
 
 .nav-item {
-	margin-right:12px;
+	margin-left:6px;
+	margin-right:6px;
 }
 
-* {
-  box-sizing: border-box;
-}
+body {
+  /* Location of the image */
+  background: linear-gradient( rgba(0,0,0,0.65), rgba(0, 0, 0, 0.65) ),url("img/landing/splash-simpleja.jpg") no-repeat center center fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
 
-.bg-blurred {
-	background: no-repeat center center fixed; 
-	background-size: cover;
-	display: block;
-	left: -15px;
-	right: -15px;
-	top:-5px;
-	bottom:-5px;
-	position: fixed;
-	z-index: 1;
-	filter: brightness(35%);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	margin:-5px;
+  
+  /* Set a background color that will be displayed
+     while the background image is loading */
+  background-color: #464646;
 }
 
 /* Position text in the middle of the page/image */
-.floating-text {
+*{
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  width: 80%;
-  padding: 20px;
-  text-align: center;
+
 }
